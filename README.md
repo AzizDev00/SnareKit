@@ -24,29 +24,32 @@ Install dependencies using:
 
 ```bash
 pip install -r requirements.txt
+````
+
 Required packages:
 
-nginx
-Copy
-Edit
+```
 requests
 beautifulsoup4
 tqdm
 colorama
 psutil
 cryptography
-💻 Usage
+```
+
+---
+
+## 💻 Usage
+
 Run the tool:
 
-bash
-Copy
-Edit
+```bash
 python main.py
+```
+
 You'll be greeted with a CLI menu like this:
 
-markdown
-Copy
-Edit
+```
 Choose a tool:
   1. Website Copier to ZIP
   2. System Info
@@ -55,72 +58,68 @@ Choose a tool:
   5. File Encrypt / Decrypt
   6. IP Geo Lookup
   0. Exit
-🧰 Tool Usage Details
-1️⃣ Website Copier
-Enter a website URL (e.g., https://example.com)
+```
 
-Choose whether to download CSS, JS, images, internal pages
+---
 
-Optionally compress to .zip
+## 🧰 Tool Usage Details
 
-Files saved under a folder named after the domain
+### 1️⃣ Website Copier
 
-2️⃣ System Info
+* Enter a website URL (e.g., `https://example.com`)
+* Choose whether to download CSS, JS, images, internal pages
+* Optionally compress to `.zip`
+* Files saved under a folder named after the domain
+
+### 2️⃣ System Info
+
 Displays:
 
-OS version
+* OS version
+* Boot time
+* CPU usage and cores
+* Memory usage
+* Disk space
+* Network interface info
 
-Boot time
+### 3️⃣ Port Scanner
 
-CPU usage and cores
+* Input a domain or IP
+* Scans common ports (22, 80, 443, etc.)
+* Shows which are open or filtered
 
-Memory usage
+### 4️⃣ Password Generator
 
-Disk space
+* Choose password length and strength level
+* Generates secure password with optional symbols and caps
 
-Network interface info
+### 5️⃣ File Encrypt / Decrypt
 
-3️⃣ Port Scanner
-Input a domain or IP
+* Encrypt any file with a password
+* Produces `.enc` file
+* Decrypt using same password
+* AES-128 based (Fernet from `cryptography`)
 
-Scans common ports (22, 80, 443, etc.)
+### 6️⃣ IP Geo Lookup
 
-Shows which are open or filtered
+* Enter any **public IP** or leave blank for your own
+* Displays location (country, city, org, lat/long)
+* Works via `ipinfo.io`
 
-4️⃣ Password Generator
-Choose password length and strength level
+---
 
-Generates secure password with optional symbols and caps
+## 🏁 Future Ideas
 
-5️⃣ File Encrypt / Decrypt
-Encrypt any file with a password
+* Subdomain scanner
+* Website login support
+* Folder hash audits
+* Clipboard integration
 
-Produces .enc file
+---
 
-Decrypt using same password
+## 📦 Project Structure
 
-AES-128 based (Fernet from cryptography)
-
-6️⃣ IP Geo Lookup
-Enter any public IP or leave blank for your own
-
-Displays location (country, city, org, lat/long)
-
-Works via ipinfo.io
-
-🏁 Future Ideas
-Subdomain scanner
-
-Website login support
-
-Folder hash audits
-
-Clipboard integration
-
-📦 Project Structure
-css
-Copy
-Edit
+```
 SnareKit/
 ├── main.py
 ├── website_copier.py
@@ -131,10 +130,20 @@ SnareKit/
 ├── geo_lookup.py
 ├── requirements.txt
 └── README.md
-🔓 License
+```
+
+---
+
+## 🔓 License
+
 MIT License — use it, remix it, extend it. Just give credit if you build on it!
 
-👤 Author
-Developed by AzizDev00
-📬 Telegram: @sharafutdinov_azizbek
+---
+
+## 👤 Author
+
+Developed by **[AzizDev00](https://github.com/AzizDev00)**
+📬 Telegram: [@sharafutdinov\_azizbek](https://t.me/sharafutdinov_azizbek)
+
+---
 
